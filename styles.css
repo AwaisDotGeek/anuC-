@@ -310,4 +310,6 @@ th[scope="row"] {
   .menu-active {
     width: 70%;
   }
+  .middle {
+    padding: 0 12%;
 }
