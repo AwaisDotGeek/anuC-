@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Start Learning C#</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h2>Learn C#</h2>
+    </div>
+
+    <div class="menu-and-content-container">
+      <div class="menu-container">
+        <div class="nav--menu">
+          <div class="brand">Dashboard</div>
+          <div class="menu-list">
+            <ul id="menu-content">
+              <li>
+                <a href="../html/index.html"> Dot Net Framework </a>
+              </li>
+
+              <!-- <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="service">
+                  <li>New Service 1</li>
+                  <li>New Service 2</li>
+                  <li>New Service 3</li>
+                </ul> -->
+
+              <!-- <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li>New New 1</li>
+                  <li>New New 2</li>
+                  <li>New New 3</li>
+                </ul> -->
+
+              <li class="selected">
+                <a href="#"> Event-Driven Programming </a>
+              </li>
+
+              <li>
+                <a href="#"> Datatypes in C# </a>
+              </li>
+              <li>
+                <a href="#"> Variables and Identifiers in C# </a>
+              </li>
+              <li>
+                <a href="#">Escape Sequences in C# </a>
+              </li>
+              <li>
+                <a href="#">Operators in C# </a>
+              </li>
+              <li>
+                <a href="#">Enumerations in C# </a>
+              </li>
+              <li>
+                <a href="#">Classes and Objects </a>
+              </li>
+              <li>
+                <a href="#">Inheritance </a>
+              </li>
+              <li>
+                <a href="#">ADO Dot Net Framework </a>
+              </li>
+              <li>
+                <a href="#">Exception Handling </a>
+              </li>
+              <li>
+                <a href="#">Properties and Indexers </a>
+              </li>
+              <li>
+                <a href="#">Delegates </a>
+              </li>
+              <li>
+                <a href="#"> Abstract Classes and Methods </a>
+              </li>
+              <li>
+                <a href="#">Interfaces </a>
+              </li>
+              <li>
+                <a href="#">Introduction to LINQ </a>
+              </li>
+              <li>
+                <a href="#">Operator Overloading </a>
+              </li>
+              <li>
+                <a href="#">Forms Programming </a>
+              </li>
+              <li>
+                <a href="#"> Window Controls (Dot Net) </a>
+              </li>
+              <li>
+                <a href="#">Basics of HTML </a>
+              </li>
+              <li>
+                <a href="#">Tables and Forms (HTML) </a>
+              </li>
+              <!-- <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-question fa-lg"></i> Questions <span class="arrow"></span></a>
+                </li>
+                <ul class="options collapse" id="products">
+                    <li class="active"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle">
+        <!-- For tablets and phones -->
+        <div class="table-of-contents-btn-container">
+          <button class="table-of-contents-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <br />
+        <h2 class="upper-gap">Abstract Classes and Methods in C#:</h2>
+        <h3>Abstract Class:</h3>
+        <p>
+          Abstract classes are used to achieve abstraction in C# which is the
+          process to hide the internal/private details and showing functionality
+          only. Abstraction can be achieved by two ways:
+          <br />
+          1. Abstract class
+          <br />
+          2. Interface
+          <br />
+          Abstract class and interface both can have abstract methods which is
+          important for abstraction.
+        </p>
+        <p>
+          In C#, abstract class is a class which is declared abstract with
+          abstract and non-abstract methods. It cannot be instantiated and its
+          implementation must be provided by derived classes where derived class
+          is forced to provide the implementation of all the abstract methods.
+        </p>
+        <table class="exampless">
+          <tr>
+            <td>using System;</td>
+          </tr>
+          <tr>
+            <td>public abstract class Shape {</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;public abstract void draw(); }</td>
+          </tr>
+          <tr>
+            <td>public class Triangle : Shape {</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;public override void draw() {</td>
+          </tr>
+          <tr>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("drawing triangle"); } }
+            </td>
+          </tr>
+          <tr>
+            <td>public class Pentagon : Shape {</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;public override void draw() {</td>
+          </tr>
+          <tr>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("drawing pentagon"); } }
+            </td>
+          </tr>
+          <tr>
+            <td>public class TestingAbstract {</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;public static void Main() {</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;Shape shp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;shp = new Triangle();</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;shp.draw();</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;shp = new Pentagon();</td>
+          </tr>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;shp.draw(); } }</td>
+          </tr>
+        </table>
+        <br /><br />
+        <table class="exampless">
+          <tr>
+            <th>Output:</th>
+          </tr>
+          <tr>
+            <td>drawing triangle</td>
+          </tr>
+          <tr>
+            <td>drawing pentagon</td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <h3>Abstract Methods:</h3>
+        <p>
+          A method which is declared abstract, has no body and can be declared
+          inside the abstract class only (no other type of class) is known as
+          abstract method. Abstract method is internally a virtual method so it
+          can be overridden by derived/child class and its implementation must
+          be provided by derived classes.
+        </p>
+        <table>
+          <tr>
+            <th>Example:</th>
+          </tr>
+          <tr>
+            <td>public abstract void printMessage();</td>
+          </tr>
+        </table>
+        <br /><br /><br />
+        <div class="footer"></div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        let tocb = $(".table-of-contents-btn");
+        let menuContainer = $(".menu-container");
+
+        tocb.click(function () {
+          menuContainer.toggleClass("menu-active");
+
+          if (menuContainer.hasClass("menu-active")) {
+            tocb.css({ left: "58%" });
+            setTimeout(function () {
+              tocb.css({
+                left: menuContainer.innerWidth() - tocb.innerWidth() + "px",
+              });
+            }, 500);
+          } else {
+            tocb.css({ left: "0" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
